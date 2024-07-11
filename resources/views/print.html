@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Undangan Yudisium</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .letter-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .letter-header, .letter-footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .letter-body {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <div class="letter-header">
+            <h2>Universitas Haraoan Bangsa</h2>
+            <p>Fakultas Sains dan Teknologi</p>
+            <hr>
+        </div>
+        <div class="letter-body">
+            <p>Yth. {{ $pengajuan->nama }}</p>
+            <p>
+                Dengan hormat,<br>
+                Kami mengundang Anda untuk menghadiri acara yudisium yang akan dilaksanakan pada:
+            </p>
+            <p>
+                Hari/Tanggal: <strong>Senin, 15 Juli 2024</strong><br>
+                Waktu: <strong>08:00 - 12:00 WIB</strong><br>
+                Tempat: <strong>Aula Gedung Serbaguna Universitas Harapan Bangsa</strong>
+            </p>
+            <p>
+                Kami harapkan kehadiran Anda tepat waktu dengan membawa perlengkapan yang diperlukan. 
+                Demikian surat undangan ini kami sampaikan. Atas perhatian dan kehadiran Anda, kami ucapkan terima kasih.
+            </p>
+            <p>
+                Hormat kami,<br>
+                Fakultas Sains dan Teknologi<br>
+                Universitas Harapan Bangsa
+            </p>
+        </div>
+        <div class="letter-footer">
+            <p>&copy; 2024 Universitas Harapan Bangsa</p>
+        </div>
+    </div>
+</body>
+</html>
